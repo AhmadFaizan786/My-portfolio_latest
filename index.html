@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav id="mynav">
+      <div class="container">
+        <div class="nav">
+          <div class="nav-logo">
+            <a href="" style="text-decoration: none;"><h1 style="color: #ffe24f;">FA</h1></a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#about-me" class="btn btn--nav">About me</a></li>
+            <li>
+              <a href="#portfolio" class="btn btn--nav">projects</a>
+            </li>
+            <li>
+              <a href="#experience" class="btn btn--nav">Skills</a>
+            </li>
+            <li>
+              <a href="#testimonials" class="btn btn--nav">Certifications</a>
+            </li>
+            <li>
+              <a href="https://drive.google.com/file/d/13MjvZ0BxjU3iHyL8ycjPHFOZiBhjJBCl/view?usp=sharing" class="btn btn--raised">RESUME</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button id="toggle-theme" aria-label="Toggle dark theme">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          enable-background="new 0 0 24 24"
+          height="24px"
+          viewBox="0 0 24 24"
+          width="24px"
+          fill="var(--light-icon)"
+        >
+          <rect fill="none" height="24" width="24" />
+          <path
+            d="M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36c-0.98,1.37-2.58,2.26-4.4,2.26 c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"
+          />
+        </svg>
+      </button>
+    </nav>
+    <main>
+      <section
+        id="intro"
+        class="layout-section"
+        aria-describedby="intro-h1 intro-h2"
+      >
+        <div class="container">
+          <div class="intro-content">
+          <h1 id="intro-h1" class="title--lg intro-name">Faizan Ahmad</h1>
+          <h2 id="intro-h2" class="title--lg intro-tagline">Web Developer</h2>
+          <p class="text--xl">
+            a software engineer passionate about bridging the gap between design and development, making your vision a reality.
+          </p>
+          <p class="text--xl">
+          </p>
+          </div>
+
+          <div class="Image-Container">
+            <img 
+            id="myImage"
+            src="imgs/portfolio_pic.jpg"
+            alt="myImage"
+            width="300px"
+            >
+        </div>
+        </div>
+        <div class="scroll-down" id="scroll-down">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="48px"
+            viewBox="0 0 24 24"
+            width="48px"
+            fill="var(--scroll-fill)"
+          >
+            <path d="M0 0h24v24H0V0z" fill="none" />
+            <path
+              d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+              stroke="var(--light-icon)"
+            />
+          </svg>
+        </div>
+      </section>
+
+      <section
+        id="about-me"
+        class="layout-section"
+        aria-labelledby="heading-aboutme"
+      >
+        <div class="container">
+          <h2 id="heading-aboutme" class="title--sm layout-section-title">
+            About me
+          </h2>
+          <div class="layout-grid-half">
+            <div>
+              <p class="text--lg">
+                I'm a final year Computer Science Engineering student with a strong focus on <span>front-end web development.</span>
+                     My fascination lies in crafting user interfaces that are not only visually appealing but also intuitive and user-friendly.
+                    I'm fascinated by the world of web development, where creativity and code come together to shape the online experiences we have. <br>
+                    Beyond academics, I'm actively involved in my college's developer community. As the <span> ex-graphics lead</span> at the <span>Google </span>
+              </p>
+
+            </div>
+            <div>
+                <p class="text--lg">
+                  <span>Developers Student Club</span> and <span>technical coordinator</span> at the <span>GeeksforGeeks student chapter</span>, I thrive in collaborative environments,
+                   bridging the gap between engineering and design. There's immense satisfaction in turning ideas into beautiful, functional web products that come alive online.
+                  </p>
+          
+
+              <p class="text--lg">
+                <span>When I'm not coding</span>, you might find me keeping up with current trends over a steaming cup of chai <span>to stay creative</span> , or crossing off another item on my bucket list.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="portfolio"
+        class="layout-section"
+        aria-labelledby="heading-portfolio"
+      >
+        <div class="container">
+          <h2 id="heading-portfolio" class="title--sm layout-section-title">
+            projects
+          </h2>
+          <div class="portfolio">
+            <img
+              src="/imgs/PGLIFE-Home-page.png"
+              width="300"
+              height="300"
+              alt="Stocks web app"
+              class="portfolio-screenshot"
+              style="object-fit: cover;"
+              
+            >
+            <div>
+              <h3 class="title">PGLife</h3>
+              <p class="text">
+                Built a full-stack web application to simplify finding paying guest (PG) accommodations. 
+                Users can search their city for PGs, filter by preferences, and discover local insights - all through an intuitive interface, empowering them to find their perfect PG with ease.
+              </p>
+              <a
+                href="https://github.com/AhmadFaizan786/PGLife/tree/master"
+                class="btn btn--link"
+                target="_blank"
+                >Visit</a
+              >
+            </div>
+          </div>
+          <div class="portfolio">
+            <img
+              src="https://res.cloudinary.com/dbfn5lnvx/image/upload/v1648478885/learnhtmlcss/portfolio/project-2.jpg"
+              width="300"
+              height="300"
+              alt="Todo app"
+              class="portfolio-screenshot"
+            >
+            <div>
+              <h3 class="title">Todo app</h3>
+              <p class="text">
+                Having goals is a must in every day life. This is why I created
+                this Todo app that I use every workday to plan my tasks ahead.
+              </p>
+              <a
+                href="https://my-to-do-six.vercel.app/"
+                class="btn btn--link"
+                target="_blank"
+                >Visit</a
+              >
+              <a 
+                href="https://github.com/AhmadFaizan786/My-To-Do.git"
+                class="btn btn--link"
+                >github</a>
+            </div>
+          </div>
+          <div class="portfolio">
+            <img
+              src="imgs/WeatherApp.png"
+              width="300"
+              height="300"
+              alt="Travel planner"
+              class="portfolio-screenshot"
+              style="object-fit: cover;"
+            >
+            <div>
+              <h3 class="title">Weather App</h3>
+              <p class="text">
+                Real-time weather at your fingertips. Built with HTML, CSS, JavaScript, and OpenWeatherMap API.
+              </p>
+              <a
+                href="https://weather-app-liard-one.vercel.app/"
+                class="btn btn--link"
+                target="_blank"
+                >Visit</a
+              >
+              <a href="https://github.com/AhmadFaizan786/DOM_PracticeProjects/tree/main/7_Weather_App"
+                class="btn btn--link"
+              >github</a>
+            </div>
+          </div>
+          <div class="portfolio">
+            <img
+              src="/imgs/GuessTheNoGame.png"
+              width="300"
+              height="300"
+              alt="GuessTheNumberGame"
+              class="portfolio-screenshot"
+              style="object-fit: cover;"
+            >
+            <div>
+              <h3 class="title">Guess The Number</h3>
+              <p class="text">
+                Test your intuition and logic in this single-player JavaScript game. 
+                Guess the hidden number between 1-100 in 10 tries or less! Hints guide you towards the answer - too high or too low? 
+                Can you crack the code?
+              </p>
+              <a
+                href="https://guess-the-number-game-two.vercel.app/"
+                class="btn btn--link"
+                target="_blank"
+                >Visit</a
+              >
+              <a href="https://github.com/AhmadFaizan786/GuessTheNumberGame"
+              class="btn btn--link"
+              >github</a>
+              ></a>
+            </div>
+          </div>
+          <div class="portfolio">
+            <img
+              src="/imgs/TicTacToe.png"
+              width="300"
+              height="300"
+              alt="GuessTheNumberGame"
+              class="portfolio-screenshot"
+              style="object-fit: cover;"
+            >
+            <div>
+              <h3 class="title">Tic Tac Toe</h3>
+              <p class="text">
+                Challenge a friend or test your own skills with this classic Tic Tac Toe game,
+                 built entirely with HTML, CSS, and JavaScript. Choose your X or O and strategize your moves on a sleek, interactive board. No need for paper and pen
+                 - this digital duel keeps the fun going, click after click!
+              </p>
+              <a
+                href="https://tic-tac-toe-tau-sooty.vercel.app/"
+                class="btn btn--link"
+                target="_blank"
+                >Visit</a
+              >
+              <a href="https://github.com/AhmadFaizan786/Tic-Tac-Toe"
+              class="btn btn--link"
+              >github</a>
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="experience"
+        class="layout-section"
+        aria-labelledby="heading-experience"
+      >
+        <div class="container">
+          <h2 id="heading-experience" class="title--sm layout-section-title">
+            Skills
+          </h2>
+          <ul class="tags">
+            <li class="tag">JavaScript</li>
+            <li class="tag">CSS3</li>
+            <li class="tag">HTML5</li>
+            <li class="tag">Bootstrap</li>
+            <li class="tag">React</li>
+            <li class="tag">Responsive Web</li>
+            <li class="tag">MySql</li>
+            <li class="tag">Google Cloud</li>
+            <li class="tag">XAMPP</li>
+            <li class="tag">PHP</li>
+            <li class="tag">C++</li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        id="testimonials"
+        class="layout-section"
+        aria-labelledby="heading-testimonials"
+      >
+        <div class="container">
+          <h2 id="heading-testimonials" class="title--sm layout-section-title">
+            Certifications
+          </h2>
+          <div class="myCertificates">
+            <p>
+              <a href="https://drive.google.com/file/d/1Ju3wbeYZ_TiQS5rXCiFM8peH3qI1oFYj/view?usp=sharing"
+              style="text-decoration: none;"
+              class="text--lg"
+              > Web Development Training <i class="ri-links-line"></i>
+              </a>
+              </p>
+              <p class="text--lg">
+                <a href="https://drive.google.com/file/d/1tSYS-Y5qF0CsI7zqeStd-XrwpOYcUVYp/view?usp=sharing"
+                style="text-decoration: none;"
+                > Responsive Web Design <i class="ri-links-line"></i>
+                </a>
+              </p>
+              <p class="text--lg">
+                <a href="https://drive.google.com/file/d/1k0KLR-_YrLaSxuoaZ3xSZJV_9i0t_McK/view?usp=sharing"
+                style="text-decoration: none;"
+                > Google Developers Student Club  <i class="ri-links-line"></i>
+                </a>
+              </p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="side">
+            <img
+              src="https://res.cloudinary.com/dbfn5lnvx/image/upload/v1648478885/learnhtmlcss/portfolio/logo.svg"
+              alt="Web developer logo"
+              width="45"
+              height="43"
+            >
+            <div>
+              <p class="text--bold footer-name">&copy; 2024 Faizan Ahmad</p>
+              <p class="text--sm footer-rights">All rights reserved.</p>
+            </div>
+          </div>
+          <div class="side" id="myfooterlinks-logo">
+            <ul class="footer-sm">
+              <li>
+                <a href="mailto:faizan.ahmad8542@gmail.com" aria-label="Email" id = "myfooterlinks-logo">
+                  <h1><i class="ri-mail-line" id="my-social-icons"></i></h1>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/faizanahmad555/" aria-label="Email" id = "myfooterlinks-logo">
+                  <h1><i class="ri-linkedin-line" id="my-social-icons"></i></h1>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/AhmadFaizan786" aria-label="Email" id = "myfooterlinks-logo">
+                  <h1><i class="ri-github-fill" id="my-social-icons"></i></h1>
+                </a>
+              </li>
+              <li>
+                <a href="https://vercel.com/ahmadfaizan555" aria-label="Email" id = "myfooterlinks-logo">
+                  <h1><i class="ri-triangle-fill" id="my-social-icons"></i></h1>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="up-arrow">
+      <a href="#mynav">
+        <h1><i class="ri-arrow-up-double-fill"></i></h1>
+      </a>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
