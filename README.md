@@ -1,6 +1,6 @@
 ## My Portfolio Website
 
-Welcome to my online portfolio! This website showcases my skills and experience as a software developer. I built it this website using HTML, CSS, and JavaScript, ensuring a fully responsive design that adapts seamlessly to any device.
+Welcome to my online portfolio! This website showcases my skills and experience as a software developer. I built it using HTML, CSS, and JavaScript, ensuring a fully responsive design that adapts seamlessly to any device.
 
 Features:
 
